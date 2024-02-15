@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit&display=swap");
+
+body {
+  font-family: "Outfit", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  margin: 0 15%;
+}
+
+.add-item-icon {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.add-item-icon img {
+  height: 40px;
+  width: 40px;
+}
+
+.item-lists {
+  background-color: #f0f0f0;
+  height: 400px;
+  border-radius: 7px;
+  overflow-y: auto;
+}
+
+.item-table {
+  padding: 10px 20px;
+}
+
+.item-data {
+}
+
+.item-row {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 2fr 2fr 0.5fr 0.5fr 0.5fr;
+  border-radius: 7px;
+}
+
+.item-row p {
+  margin: 0;
+}
+
+.item-row p img {
+  height: 27px;
+  width: 27px;
+}
+
+.icon-tabler-pencil:hover {
+  color: #00ff8c;
+}
+.icon-tabler-trash-filled:hover {
+  color: #bc0b0b;
+}
+
+/* Additem Component Start */
+
+form {
+  background-color: #f1f1f1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  padding: 50px 0;
+  border-radius: 10px;
+}
+
+input {
+  height: 30px;
+  width: 400px;
+  font-size: 1.1rem;
+  border: 1px solid #00ff8c;
+  border-radius: 10px;
+  outline: none;
+}
+
+input:focus {
+  outline: 0;
+  box-shadow: 0 0 0.3rem 0 #00ff8c;
+}
+
+textarea {
+  border: 1px solid #00ff8c;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  margin-top: 10px;
+  height: 200px;
+  width: 400px;
+}
+
+textarea:focus {
+  outline: 0;
+  box-shadow: 0 0 0.3rem 0 #00ff8c;
+}
+
+input[type="submit"] {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 20px;
+  color: #929292;
+}
+
+input[type="submit"]:hover {
+  background-color: #00ff8c;
+  color: white;
+}
+
+/* Additem Component End */
+
+.item-view {
+  margin-top: 30px;
+  background-color: #f1f1f1;
+  padding: 30px;
+  border-radius: 10px;
+  font-weight: 600;
+  color: #929292;
+  font-size: 0.8rem;
+}
+
+.item-updated {
+  font-size: 0.7rem;
+  float: right;
+}
+
+.dev_info{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #d3d3d3;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 10px 0;
+}
+
+.dev_info a {
+    margin-left: 5px;
+}
